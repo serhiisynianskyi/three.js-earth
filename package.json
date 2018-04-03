@@ -1,0 +1,31 @@
+{
+	"name": "three.js-earth",
+	"version": "1.0.0",
+	"description": "Earth object",
+	"main": "index.js",
+	"scripts": {
+		"build": "babel src -d dist --presets es2017",
+		"watch": "babel src -d dist --presets es2017 -w"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/serhiisynianskyi/three.js-earth.git"
+	},
+	"keywords": [
+		"earth",
+		"three.js",
+		"webgl"
+	],
+	"author": "Serhii Sinyanskyi",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/serhiisynianskyi/three.js-earth/issues"
+	},
+	"homepage": "https://github.com/serhiisynianskyi/three.js-earth#readme",
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-es2017": "^6.24.1",
+		"three": "^0.90.0",
+		"three-orbit-controls": "^82.1.0"
+	}
+}
