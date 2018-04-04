@@ -5,6 +5,7 @@ function fragmentShader(){
 		precision mediump int;
 
 		uniform float time;
+		uniform float hover;
 		varying vec3 vPosition;
 		void main()	{
 			float border = 0.2;
@@ -14,7 +15,8 @@ function fragmentShader(){
 
 			vec2 m = vPosition.xy;
 			float dist = radius - sqrt(m.x * m.x + m.y * m.y);
-
+			if(hover == 1.0)
+				color1 = vec4(1.0, 0.0, 1.0, 1.0);
 			float t = 0.0;
 			if (dist > border)
 				t = 1.0;
